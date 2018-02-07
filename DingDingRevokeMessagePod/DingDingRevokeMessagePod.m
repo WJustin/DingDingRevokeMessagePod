@@ -94,7 +94,9 @@ CHOptimizedMethod1(self, void, DTMessageControllerDataSource, setMessages, NSArr
 CHOptimizedMethod1(self, void, YYLabel, setAttributedText, NSAttributedString *, attributedText) {
     if ([attributedText.string containsString:@"撤回了一条消息"] &&
         ![attributedText.string containsString:@"已阻止"]) {
-        attributedText = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"已阻止%@", attributedText.string] attributes:nil];
+        NSString *string = [NSString stringWithFormat:@"已阻止%@", attributedText.string];
+        string =  [string stringByReplacingOccurrencesOfString:@"了一条" withString:@""];
+        attributedText = [[NSAttributedString alloc] initWithString:string attributes:nil];
     }
     CHSuper1(YYLabel, setAttributedText, attributedText);
 }
