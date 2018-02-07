@@ -1,6 +1,7 @@
 # DingDingRevokeMessagePod
 
 ## Preview
+<img src="https://github.com/WJustin/DingDingRevokeMessagePod/blob/master/snaptshop.png"/>
 
 ## Installation
 
