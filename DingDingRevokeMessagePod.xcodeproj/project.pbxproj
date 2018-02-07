@@ -7,11 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA025E76202B14D3002C98D2 /* DDRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA025E70202B14D2002C98D2 /* DDRViewController.m */; };
+		BA025E77202B14D3002C98D2 /* DDRWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BA025E71202B14D2002C98D2 /* DDRWindow.m */; };
+		BA025E78202B14D3002C98D2 /* DDRConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = BA025E72202B14D2002C98D2 /* DDRConfig.h */; };
+		BA025E79202B14D3002C98D2 /* DDRWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = BA025E73202B14D2002C98D2 /* DDRWindow.h */; };
+		BA025E7A202B14D3002C98D2 /* DDRConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BA025E74202B14D2002C98D2 /* DDRConfig.m */; };
+		BA025E7B202B14D3002C98D2 /* DDRViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA025E75202B14D2002C98D2 /* DDRViewController.h */; };
 		BA38A64E202AE90900ABEC98 /* DingDingRevokeMessagePod.m in Sources */ = {isa = PBXBuildFile; fileRef = BA38A64D202AE90900ABEC98 /* DingDingRevokeMessagePod.m */; };
 		BA38A652202AE90900ABEC98 /* DingDingRevokeMessagePod.h in Headers */ = {isa = PBXBuildFile; fileRef = BA38A64C202AE90900ABEC98 /* DingDingRevokeMessagePod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA025E70202B14D2002C98D2 /* DDRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRViewController.m; sourceTree = "<group>"; };
+		BA025E71202B14D2002C98D2 /* DDRWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRWindow.m; sourceTree = "<group>"; };
+		BA025E72202B14D2002C98D2 /* DDRConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRConfig.h; sourceTree = "<group>"; };
+		BA025E73202B14D2002C98D2 /* DDRWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRWindow.h; sourceTree = "<group>"; };
+		BA025E74202B14D2002C98D2 /* DDRConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRConfig.m; sourceTree = "<group>"; };
+		BA025E75202B14D2002C98D2 /* DDRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRViewController.h; sourceTree = "<group>"; };
 		BA38A649202AE90900ABEC98 /* DingDingRevokeMessagePod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DingDingRevokeMessagePod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA38A64C202AE90900ABEC98 /* DingDingRevokeMessagePod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingDingRevokeMessagePod.h; sourceTree = "<group>"; };
 		BA38A64D202AE90900ABEC98 /* DingDingRevokeMessagePod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingDingRevokeMessagePod.m; sourceTree = "<group>"; };
@@ -50,6 +62,12 @@
 			children = (
 				BA38A64C202AE90900ABEC98 /* DingDingRevokeMessagePod.h */,
 				BA38A64D202AE90900ABEC98 /* DingDingRevokeMessagePod.m */,
+				BA025E72202B14D2002C98D2 /* DDRConfig.h */,
+				BA025E74202B14D2002C98D2 /* DDRConfig.m */,
+				BA025E75202B14D2002C98D2 /* DDRViewController.h */,
+				BA025E70202B14D2002C98D2 /* DDRViewController.m */,
+				BA025E73202B14D2002C98D2 /* DDRWindow.h */,
+				BA025E71202B14D2002C98D2 /* DDRWindow.m */,
 				BA38A651202AE90900ABEC98 /* Info.plist */,
 			);
 			path = DingDingRevokeMessagePod;
@@ -63,6 +81,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA38A652202AE90900ABEC98 /* DingDingRevokeMessagePod.h in Headers */,
+				BA025E78202B14D3002C98D2 /* DDRConfig.h in Headers */,
+				BA025E7B202B14D3002C98D2 /* DDRViewController.h in Headers */,
+				BA025E79202B14D3002C98D2 /* DDRWindow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA38A64E202AE90900ABEC98 /* DingDingRevokeMessagePod.m in Sources */,
+				BA025E76202B14D3002C98D2 /* DDRViewController.m in Sources */,
+				BA025E7A202B14D3002C98D2 /* DDRConfig.m in Sources */,
+				BA025E77202B14D3002C98D2 /* DDRWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
