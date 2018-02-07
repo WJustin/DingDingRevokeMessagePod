@@ -15,6 +15,8 @@
 #import "DDRWindow.h"
 #import "DDRConfig.h"
 
+static BOOL isFalse;
+
 @interface YYLabel
 
 @property (nonatomic) NSAttributedString *attributedText;
@@ -43,6 +45,7 @@
 
 @property(retain, nonatomic) DTMessageControllerDataSource *dataSource;
 - (void)receivedMessageNoticeUpdateNotification:(id)arg1;
+- (void)refreshAllMessages;
 
 @end
 
@@ -53,7 +56,12 @@ CHDeclareClass(DTMessageBaseViewController)
 
 CHOptimizedMethod0(self, void, UITabBarController, viewDidLoad) {
     CHSuper0(UITabBarController, viewDidLoad);
-    [DDRWindow shareWindow];
+    [[DDRWindow shareWindow] setDismissBlock:^{
+        [self.viewControllers enumerateObjectsUsingBlock:^(__kindof UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            UINavigationController *nav = (UINavigationController *)obj;
+            [nav popToRootViewControllerAnimated:YES];
+        }];
+    }];
 }
 
 CHOptimizedMethod1(self, void, DTMessageControllerDataSource, setMessages, NSArray<DTBizMessage *> *, messages) {
@@ -100,6 +108,15 @@ CHOptimizedMethod1(self, void, YYLabel, setAttributedText, NSAttributedString *,
 
 CHOptimizedMethod1(self, void, DTMessageBaseViewController, receivedMessageNoticeUpdateNotification, id, arg1) {
     if ([DDRConfig shareConfig].canRevokeMsg) {
+        NSNotification *notify = arg1;
+        NSArray *messages = notify.userInfo[@"WKUserInfoMessagesKey"];
+        DTBizMessage *message = [messages lastObject];
+        if (message && !isFalse) {
+            [self.dataSource.messages lastObject].recallStatus = 1;
+            self.dataSource.messages = self.dataSource.messages;
+            [self refreshAllMessages];
+        }
+        isFalse = !isFalse;
         return;
     }
     CHSuper1(DTMessageBaseViewController, receivedMessageNoticeUpdateNotification, arg1);

@@ -10,6 +10,8 @@
 
 @interface DDRWindow : UIWindow
 
+@property (nonatomic, copy) void (^dismissBlock)(void);
+
 + (instancetype)shareWindow;
 
 @end

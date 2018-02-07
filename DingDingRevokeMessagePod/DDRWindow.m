@@ -65,6 +65,9 @@ static CGFloat const kDotWindowMargin          = 20.0f;
     self.hidden = YES;
     [vc setDismissBlock:^{
         self.hidden = NO;
+        if (self.dismissBlock) {
+            self.dismissBlock();
+        }
     }];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:nav
