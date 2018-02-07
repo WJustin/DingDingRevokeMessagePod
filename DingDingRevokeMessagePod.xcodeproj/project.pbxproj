@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BA38A64E202AE90900ABEC98 /* DingDingRevokeMessagePod.m in Sources */ = {isa = PBXBuildFile; fileRef = BA38A64D202AE90900ABEC98 /* DingDingRevokeMessagePod.m */; };
-		BA38A650202AE90900ABEC98 /* DingDingRevokeMessagePod.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BA38A64F202AE90900ABEC98 /* DingDingRevokeMessagePod.podspec */; };
 		BA38A652202AE90900ABEC98 /* DingDingRevokeMessagePod.h in Headers */ = {isa = PBXBuildFile; fileRef = BA38A64C202AE90900ABEC98 /* DingDingRevokeMessagePod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -16,7 +15,6 @@
 		BA38A649202AE90900ABEC98 /* DingDingRevokeMessagePod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DingDingRevokeMessagePod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA38A64C202AE90900ABEC98 /* DingDingRevokeMessagePod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingDingRevokeMessagePod.h; sourceTree = "<group>"; };
 		BA38A64D202AE90900ABEC98 /* DingDingRevokeMessagePod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingDingRevokeMessagePod.m; sourceTree = "<group>"; };
-		BA38A64F202AE90900ABEC98 /* DingDingRevokeMessagePod.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DingDingRevokeMessagePod.podspec; sourceTree = "<group>"; };
 		BA38A651202AE90900ABEC98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,7 +50,6 @@
 			children = (
 				BA38A64C202AE90900ABEC98 /* DingDingRevokeMessagePod.h */,
 				BA38A64D202AE90900ABEC98 /* DingDingRevokeMessagePod.m */,
-				BA38A64F202AE90900ABEC98 /* DingDingRevokeMessagePod.podspec */,
 				BA38A651202AE90900ABEC98 /* Info.plist */,
 			);
 			path = DingDingRevokeMessagePod;
@@ -127,7 +124,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA38A650202AE90900ABEC98 /* DingDingRevokeMessagePod.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
